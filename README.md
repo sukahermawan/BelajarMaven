@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/8efaa40d-8547-480d-9d83-dd3403185081)SCA LAB  (pembuktian keakuratan sca MAVEN)
+SCA LAB  (pembuktian keakuratan sca MAVEN)
 
 link :
 https://www.petanikode.com/java-maven/
@@ -16,30 +16,3 @@ kesimpulannya banyak yg direct dependency dianggap ssi sca tools, namun di pom x
 karena aslinya transitive namun kelemahannya dri tools scanning tdk ketahuan induknya, melainkan harus cek tree, dan cek jika direct menggunakan list sudah pasti jadi direct di scanning tools
 tree
  
-List 
- 
-Bisa juga spesifik :
-mvn dependency:tree | grep error_prone
-mvn dependency:list| grep error_prone
-
-findings gson gone after difixing dari versi 8.2.2 ke latest :
- 
-component status setelah fixing :
- 
-Normalnya contoh Ketika transitive findings akan menyebutkan direct dependency yg perlu diupdate :
- 
-
-
-
- 
-List 
- 
-Bisa juga spesifik :
-mvn dependency:tree | grep error_prone
-mvn dependency:list| grep error_prone
-
-findings gson gone after difixing dari versi 8.2.2 ke latest :
- 
-component status setelah fixing :
- 
-Normalnya contoh Ketika transitive findings akan menyebutkan direct dependency yg perlu diupdate :
